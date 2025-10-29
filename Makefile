@@ -3,13 +3,14 @@
 
 # Default values
 TERRAFORM_CMD ?= terraform
+TOFU_CMD ?= tofu
 TFLINT_CMD ?= tflint
 CHECKOV_CMD ?= checkov
 PYTHON_CMD ?= python3
 PIP_CMD ?= pip3
 MODULE_DIR ?= .
 
-# Colors for output (VSCode-inspired)
+# Colors for output (VSCode-inspired)make
 RED := \033[1;31m
 GREEN := \033[1;36m
 YELLOW := \033[1;32m
