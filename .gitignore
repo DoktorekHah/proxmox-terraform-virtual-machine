@@ -1,5 +1,12 @@
-# Local .terraform directories
+# Terraform/OpenTofu files
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tofuplan
 .terraform/
+.terraform.lock.hcl
+.terraformrc
+terraform.rc
 
 # .tfstate files
 *.tfstate
@@ -35,3 +42,64 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Additional entries from root .gitignore
+
+# OpenTofu files
+*.tofuplan
+
+# Checkov output files
+checkov-results.json
+checkov-results.sarif
+checkov-results.xml
+
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cursor files
+.cursor/
